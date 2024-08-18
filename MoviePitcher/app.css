@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    height: 10%;
+    padding: 1.5em;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow effect */
+    position: fixed; /* Make the navbar stick to the top */
+    top: 0; /* Align the navbar to the top */
+    z-index: 1000;
+}
+
+.navbar {
+    background-color: inherit;
+    color: red;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.main {
+    width: 100%;
+    height: 80%;
+    background-image: url('assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    background-color: grey;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    width: 60%;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chat-body {
+    width: 60%;
+    height: 70%;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.input-field {
+    padding: 2px;
+    background-color: inherit;
+    width: 100%;
+}
+
+input {
+    width: 85%;
+    background-color: black;
+    padding: 0.5rem;
+    border: 1px solid white;
+    color: white;
+}
+
+button {
+    width: 12%;
+    padding: 0.5rem;
+    background-color: black;
+    color: white;
+    border: none;
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    height: 10%;
+    background-color: #f8f9fa;
+    padding: 20px 0; /* Vertical padding */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow at the top of the footer */
+    position: fixed; /* Stick the footer to the bottom */
+    bottom: 0; /* Align the footer to the bottom */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.legend {
+    background-color: inherit;
+    color: black;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
